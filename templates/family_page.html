@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>{{name}}</title>
+    <link rel='stylesheet' href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta id="family_id" data-familyid="{{ family_id }}">
+    <meta id="ratings" data-ratings="{{ ratings }}">
+    <meta id="user_ratings" data-userratings="{{ user_ratings }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  </head> 
+  <body>
+    <div></div>
+    <img class='image house_image' src={{house_image}} onerror="this.src='/images/question_mark.png'" >
+    <img class='image family_image' src={{family_image}} onerror="this.src='/images/question_mark.png'" >
+    <div class='family_page_name'>{{name}} Family</div>
+    <div class='family_location'>{{city}}, {{state}}</div>
+    <hr class='ratings_upper_divider'>
+    <div class='vl'></div>
+    <div class='ratings_container'>
+      <div id='parenting' class='rating_section'>
+        <div class='skill'>Parenting</div>
+        <div class='stars'>
+          <img class='star' class='row_1' id='row_1_star_1' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_2' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_3' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_4' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_5' src="/images/star.png">
+          <div class="stars_divider"></div>
+          <img class='star' class='row_1' id='row_1_star_6' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_7' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_8' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_9' src="/images/star.png">
+          <img class='star' class='row_1' id='row_1_star_10' src="/images/star.png">
+        </div>
+      </div>
+      <hr class='ratings_divider'>
+      <div id='cleanliness' class='rating_section'>
+        <div class='skill'>Cleanliness</div>
+        <div class='stars'>
+          <img class='star' class='row_2' id='row_2_star_1' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_2' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_3' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_4' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_5' src="/images/star.png">
+          <div class="stars_divider"></div>
+          <img class='star' class='row_2' id='row_2_star_6' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_7' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_8' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_9' src="/images/star.png">
+          <img class='star' class='row_2' id='row_2_star_10' src="/images/star.png">
+        </div>
+      </div>
+      <hr class='ratings_divider'>
+      <div id='environment' class='rating_section'>
+        <div class='skill'>Environment</div>
+        <div class='stars'>
+          <img class='star' class='row_3' id='row_3_star_1' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_2' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_3' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_4' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_5' src="/images/star.png">
+          <div class="stars_divider"></div>
+          <img class='star' class='row_3' id='row_3_star_6' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_7' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_8' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_9' src="/images/star.png">
+          <img class='star' class='row_3' id='row_3_star_10' src="/images/star.png">
+        </div>
+      </div>
+      <hr class='ratings_divider'>
+      <div id='schools' class='rating_section'>
+        <div class='skill'>Schools</div>
+        <div class='stars'>
+          <img class='star' class='row_4' id='row_4_star_1' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_2' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_3' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_4' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_5' src="/images/star.png">
+          <div class="stars_divider"></div>
+          <img class='star' class='row_4' id='row_4_star_6' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_7' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_8' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_9' src="/images/star.png">
+          <img class='star' class='row_4' id='row_4_star_10' src="/images/star.png">
+        </div>
+      </div>
+      <hr class='ratings_divider'>
+      <div id='experience' class='rating_section'>
+        <div class='skill'>Experience</div>
+        <div class='stars'>
+          <img class='star' class='row_5' id='row_5_star_1' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_2' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_3' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_4' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_5' src="/images/star.png">
+          <div class="stars_divider"></div>
+          <img class='star' class='row_5' id='row_5_star_6' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_7' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_8' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_9' src="/images/star.png">
+          <img class='star' class='row_5' id='row_5_star_10' src="/images/star.png">
+        </div>
+      </div>
+    </div>
+    <div class='comments_header'>Comments</div>
+    <div class='comments_section'>
+      <div class='comments_container'>
+
+      </div>
+      <input class="comments_input" type="text" placeholder="Enter Your Comment">
+      <input class="comments_submit" type="submit" value='Post'>
+    </div>
+    <script src="/scripts/family_page.js"></script>
+  </body>
+</html>
